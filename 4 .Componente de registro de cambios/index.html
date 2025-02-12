@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="autor" content="Jeider silgado">
+    <meta name="Descripcion" content="Componente de registro de cambios">
+    <meta name="keywords" content="Frontend Developer,Componente de registro de cambios">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente de registro de cambios</title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container_sesion{
+            position: relative;
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            left: 50px;
+        }
+
+        .line-with-dots{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 54px;
+            background-color: black;
+            width: 2px;
+            height: 100vh;
+        }
+
+        .line-with-dots .dot {
+            position: relative;
+            background-color: black;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            top: 40px;
+            right: 6px;
+        }
+
+        .lista_fechas{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 48px;
+            top: 35px;
+            right: 20px;
+            width: auto;
+        }
+
+        .lista_notas{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            top: 35px;
+            width: 100%;
+        }
+
+        .lista_notas li{
+            font-weight: bold;
+        }
+
+        .lista_notas li,
+        .lista_fechas li{
+            list-style: none;
+        }
+
+        .sesion_registro{
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 60px;
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .sesion_registro p{
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 50px;
+        }
+        .sesion_registro h1{
+            text-align: center;
+            font-size: 3.0em;
+            margin-bottom: 20px;
+        }
+
+        .button {
+           display: inline-block;
+           background-color: black;
+           color:white;
+           padding: 10px 20px;
+           text-decoration: none;
+           border-radius: 8px;
+           margin-top: 20px;
+        }
+  
+        .button:hover {
+          background-color: aquamarine;
+          color: black;
+        }
+
+        .container_button{
+            text-align: center;
+        }
+
+  
+
+    </style>
+</head>
+<body>
+    <main>
+        <section class="sesion_registro">
+            <h1>Registro de cambios</h1>
+            <p>Aqui esta todo lo que hemos enviado en los ultimos dias.</p>
+            <div class="container_sesion">
+                <div>
+                    <ul class="lista_fechas">
+                        <li>Septiembre 3, 2024</li>
+                        <li>Agosto 28, 2024</li>
+                        <li>Agosto 25, 2024</li>
+                        <li>Agosto 22, 2024</li>
+                        <li>Agosto 15, 2024</li>
+                        <li>Agosto 10, 2024</li>
+                        <li>Agosto 1, 2024</li>
+                    </ul>
+                </div>
+                <div class="line-with-dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </div>
+                  <div>
+                    <ul class="lista_notas">
+                        <li>Anuncion de proyectos en la hoja de ruta de Frontend.</li>
+                        <li>Desarrolla tua habitos de aprendizaje con rachas de aprendizaje.</li>
+                        <li>Hoja de ruta de Girt y GitHub.</li>
+                        <li>Envie su solucion de proyectos y obtenga comentarios.</li>
+                        <li>Ideas de proyectos de back-end.</li>
+                        <li>Hoja de ruta de redis.</li>
+                        <li>Pagina de registro de cambios para ayudarle a mantenerse informado.</li>
+                    </ul>
+                  </div>
+            </div>
+
+            <div class="container_button">
+                <a href="#" class="button">Visit Complete Changelog</a>
+            </div>
+            
+        </section>
+          
+    </main>
+    
+</body>
+</html>

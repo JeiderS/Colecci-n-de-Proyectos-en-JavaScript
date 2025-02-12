@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red */
+    
+}
+
+
+body{
+    font-size: 16px;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* overflow-x: hidden; */
+}
+
+a{text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+
+h1{ font-size: 3em;}
+p{font-size: 1.25em;}
+li{font-size: 1.25em;}
+h2{font-size: 2.0em;}
+hr{
+    border: none;
+    background-color: black;
+    height: 1px;
+} 
+
+
+
+
+/* Estilos del menu de navegacion */
+
+header{
+    background-color: aquamarine;
+    padding: 20px;
+}
+
+.container_navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container_navegacion .navegacion ul{
+    display: flex;
+    gap: 15px;
+    padding-top: 20px;
+    
+}
+
+.container_navegacion .logo{
+    font-weight: bold;
+    color: blue;
+}
+
+.container_navegacion .navegacion ul li {
+    position: relative; 
+    list-style: none; 
+}
+
+.container_navegacion .navegacion ul li:not(:last-child)::after {
+    content: "/"; 
+    position: absolute;
+    right: -10px; 
+    color: black; 
+}
+
+
+/* Fin de Estilos del menu de navegacion */
+
+/* Estilos del Home */
+
+.home{
+    background-color: aqua;
+    position: relative;
+    text-align: center;
+    min-height: 100vh;
+}
+.home .content_home{
+    position: relative;
+    top: 100px;
+}
+
+
+/* Fin Estilos del Home */
+
+/* Estilos de esperincia proyectos y educacion  */
+
+.content_section{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.content_section section{
+    border: 1px solid black;
+    width: 100%;
+}
+
+.content_section .projects{
+   text-align: center;
+}
+
+.content_section .projects h2{
+    padding-top: 30px;
+}
+
+.content_section .projects li{
+    padding: 20px;
+    cursor: pointer;
+}
+
+.content_section .projects li:hover {
+    background-color: rgb(53, 171, 136);
+}
+
+.content_section .experiencia article,
+.content_section .educacion {
+    padding: 30px;
+}
+
+.content_section .experiencia article h3,
+.content_section .experiencia article p,
+.content_section section h2,
+.content_section .educacion p {
+  margin-bottom: 20px; 
+}
+
+
+/* Fin Estilos de esperincia proyectos y educacion  */
+
+
+.teacher{
+    background-color: aqua;
+    min-height: 100vh;
+    width: 100%;
+    padding: 10px;
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+
+
+.review blockquote {
+    max-width: 300px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+
+
+.teacher .review blockquote p,
+.teacher .review blockquote footer{
+    margin-bottom: 20px;
+} 
+
+
+.pie-pagina{
+    text-align: center;
+    background-color: aquamarine;
+    padding: 50px;
+}
+
+/* fin estilos pie de pagina principal */
+
+
+/* estilos de la pagina de contactos  */
+
+.main_contacto{
+    padding-bottom: 150px;
+}
+
+.contacto{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+}
+
+form {
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #3d3d3da3;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 20px;
+    /* box-shadow: 0px 0px 8px rgb(0, 0, 0,0.5); */
+}
+
+.contacto h1{
+    padding-bottom: 10px;
+}
+
+
+.contacto form label {
+    font-size: 1.3em;
+}
+
+.contacto form input{
+    border: 1px solid  #3d3d3da3;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.contacto form textarea{
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* fin estilos de la pagina de contactos */
+
+
+/* estilos de pagina de proyectos */
+
+.main_projects{
+    padding-bottom: 20px;
+    
+}
+
+.main_projects h1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.main_projects p{
+    padding-bottom: 10px;
+}
+
+.main_projects .projects .container_projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.projects{
+    text-align: center;
+    
+}
+
+
+
+.main_projects .projects .container_projects figure a,
+.main_projects .projects  .container_projects figure p{
+
+    margin-bottom: 20px;
+}
+
+.main_projects .projects  .container_projects figure{
+    width: 100%;
+    max-width: 350px;
+    padding: 5px;
+}
+
+.main_projects .projects  .container_projects figure a img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.main_projects .projects  .container_projects figure figcaption{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.main_projects .projects  .container_projects figure figcaption span {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+/* estilos pagina de articulos */
+
+.main_articles{
+    padding-bottom: 20px;
+    
+}
+
+.main_articles h1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.main_articles p{
+    padding-bottom: 10px;
+}
+
+.main_articles .articles .container_articles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.articles{
+    text-align: center;
+    
+}
+
+
+
+.main_articles .articles .container_articles figure a,
+.main_articles .articles  .container_articles figure p,
+.main_articles .articles  .container_articles figure figcaption a h2{
+
+    margin-bottom: 20px;
+}
+
+.main_articles .articles  .container_articles figure{
+    width: 100%;
+    max-width: 350px;
+    padding: 5px;
+}
+
+.main_articles .articles  .container_articles figure a img{
+    width: 100%;
+    height: auto;
+    
+}
+
+
+
+/* fin estilos de pagina de proyectos */
+
+@media screen and  (min-width: 720px) {
+
+    .container_navegacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container_navegacion .navegacion{
+        flex-direction: row;
+        padding-right: 30px;
+        padding-bottom: 0;
+    }
+
+    .container_navegacion .navegacion ul{
+        display: flex;
+        gap: 40px;
+        padding-top: 20px;
+        
+    }
+
+    .container_navegacion .navegacion ul li:not(:last-child)::after {
+        content: "/"; 
+        position: absolute;
+        right: -20px; 
+        color: black; 
+    }
+
+    .home{
+        background-color: aqua;
+        min-height: 80vh;
+    }
+    
+    .content_section {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .content_section .projects,
+    .content_section .educacion{
+        width: 30%;
+        border: none;
+    }
+
+    .content_section .projects h2
+    {
+        padding: 0;
+    }
+
+    .content_section .experiencia{
+        width: 60%;
+
+    }
+
+    .teacher{
+        padding: 30px;
+        min-height: 80vh;
+    }
+
+    .review{
+        position: relative;
+        top: 30px;
+        left: 30px;
+        max-width: calc(100% - 30px); 
+    }
+
+    .review {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* estilos de pagina de contactos */
+
+    .main_contacto{
+        padding-bottom: 50px;
+    }
+
+    .main_contacto h1,
+    .main_contacto p{
+        text-align: center;
+    }
+
+    form{
+        width: 100%;
+        max-width: 700px;
+    }
+
+    /* estilos de pagina de proyectos */
+
+    .main_projects .projects .container_projects{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        
+    }
+
+    .main_projects .projects  .container_projects figure{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    /* estilos pagina articulos */
+
+    .main_articles .articles .container_articles{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        
+    }
+
+    .main_articles .articles  .container_articles figure{
+        width: 100%;
+        max-width: 350px;
+    }
+    
+
+    
+}
+
